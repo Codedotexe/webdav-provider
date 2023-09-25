@@ -29,7 +29,7 @@ jobs:
         uses: timheuer/base64-to-file@v1.2
         with:
           fileName: 'android_keystore.jks'
-          fileDir: '/home/runner/work/WebDAV Provider/WebDAV Provider/app/keystore/'
+          fileDir: '/home/runner/work/webdav-provider/webdav-provider/app/keystore/'
           encodedString: ${{ secrets.KEYSTORE }}
 
       # Build and sign APK ("-x test" argument is used to skip tests)
